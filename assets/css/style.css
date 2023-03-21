@@ -59,7 +59,6 @@ div#register{
     width: 300px;
     height: 500px;
     border-radius: 15px;
-    animation: dark-to-light 0.3s ease-in-out;
 }
 
 #register header h1 {
@@ -85,12 +84,8 @@ div#inputs {
     gap: 60px;
     background-color: var(--white);
     border-radius: 15px;
-    animation: dark-to-light 0.3s ease-in-out;
 }
 
-div#button input{
-    margin-top: -20%;
-}
 
 .input_box {
     display: flex;
@@ -195,7 +190,6 @@ div#items{
     border-radius: 15px;
     background-color: var(--white);
     border-radius: 15px;
-    animation: dark-to-light 0.3s ease-in-out;
 }
 
 input#buttonListNotes{
@@ -271,7 +265,6 @@ input[type=number]::-webkit-outer-spin-button {
 .dark div#inputs,
 .dark div#items{
     background-color: var(--gray);
-    animation: light-to-dark 0.3s ease-in-out;
 }
 
 .dark h1{
@@ -294,26 +287,4 @@ input[type=number]::-webkit-outer-spin-button {
 .dark div#items h3,
 .dark div#moneyNotes h3{
     color: var(--white);
-}
-
-
-@keyframes dark-to-light {
-    0% {
-        background-color: var(--gray);
-    }
-
-    100% {
-        background-color: var(--white);
-    }
-}
-
-@keyframes light-to-dark {
-
-    0% {
-        background-color: var(--white);
-    }
-
-    100% {
-        background-color: var(--gray);
-    }
 }
