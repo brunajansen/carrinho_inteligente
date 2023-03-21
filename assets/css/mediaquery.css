@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+
+    p{
+        text-align: center;
+        padding: 90px;
+        color: var(--white);
+        font-size: 40px;
+    }
+
+    h5{
+        margin: -1px 65px;
+        position: fixed;
+        bottom: 10px;
+    }
+
+    input#buttonListNotes{
+        display: none;
+    }
+
+
+    div#register{
+        width: 800px;
+        height: 500px;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    div#cart {
+        display: block;
+    }
+
+    div#inputs {
+        width: 400px;
+        height: 100%;
+        background-color: var(--white);
+    }
+
+
+    div#items h3,
+    div#moneyNotes h3{
+        font-size: 20px;
+        margin: 20px 50px;
+        padding: 10px;
+    } 
+
+    div#items,
+    div#moneyNotes {
+        display: inline-block;
+        margin-left: -193px;
+        width: 400px;
+        height: 500px;
+    }
+
+    div#items{
+        float: left;
+        background-color: var(--color-green-00);
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    div#items li{
+        margin-left: 82px;
+    }
+
+    div#moneyNotes ul {
+        margin: 10px 60px;
+        font-size: 19px;
+    }
+
+    div#moneyNotes{
+        float: right;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+
+    img#money{
+        display: block;
+        left: 91.5%;
+    }
+
+    #darkMode {
+        position: fixed;
+        top: 30px;
+        right: 70px;
+        cursor: pointer;
+        font-size: 20px;
+        color: black;
+    }
+
+    .dark div#moneyNotes,
+    .dark div#cart{
+        background-color: #5e6164;
+    }
+
+}

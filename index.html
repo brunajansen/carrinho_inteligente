@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho Inteligente</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaquery.css">
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+</body>
+</html>
+
+    <p id="welcome">Bem vindo ao carrinho inteligente!</p>
+    
+    <main>
+
+        <div id="register">
+            <div id="cart">
+                <figure id="svg">
+                    <img src="assets/imgs/shopping-cart.svg">
+                </figure>
+            </div>
+
+            <div id="inputs">
+                <div id="darkMode"><i id="mode_icon" class="fa-solid fa-moon"></i></div>
+                <header>
+                    <h1>Cadastrar produto:</h1>
+                </header>
+
+                <div class="input_box">
+                    <i id="cart" class="fa fa-shopping-cart"></i>
+                    <input placeholder="Nome do produto" type="text" name="product" id="product"
+                    pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
+                </div>
+
+                <div class="input_box">
+                    <i id="money" class="fa-solid fa-money-bill-1"></i>
+                    <input placeholder="Valor do produto" type="number" name="value" id="value">
+                </div>
+
+                <input class="registerButton" type="button" onclick="product.save()" value="Salvar">
+
+                <div id="checkoutButton">
+                    <input class="checkoutButton" type="button" onclick="product.checkout()"
+                    value="Finalizar Compra"
+                </div>       
+            </div>
+
+        </div>
+        <div id="checkout">
+        
+            <div id="items">
+                <h3>Produtos da lista:</h3>
+        
+                <ol id="list">
+                </ol>
+                <div>
+                    <input type="button" id="buttonListNotes" value="Ver notas" onclick="product.listNotes()">
+                </div>
+                <img id="money" src="assets/imgs/money-wings.png" alt="">
+            </div>
+        
+            <div id="moneyNotes">
+                <h3>Deve ser no mínimo em:</h3>
+                <ol id="amountToPay">
+        
+                </ol>
+                <h5 id="toPay">Valor total:</h5>
+            </div>
+        </div>
+    </main>
+    
+    <script src="assets/js/script.js"></script>
